@@ -17,7 +17,8 @@ namespace WindowsFormsApplication1
         }
         bool erstellung = false;
         string marke, farbe;
-        int tankgroeße, ps, verbrauch;
+        int tankgroeße, ps, verbrauch, gefahren=0,tankinhalt=0;
+        double reichweite = 0;
         private void Erstellen_Click(object sender, EventArgs e)
         {
             marke = Marke.Text;
@@ -55,7 +56,7 @@ namespace WindowsFormsApplication1
         }
         private void Info()
         {
-            Informationen.Text = "Marke: " + marke+"\ngefahren: ";
+            Informationen.Text = "Marke: " + marke+"\r\ngefahren: "+gefahren+"km\r\nFarbe: "+farbe+"\r\nPS: "+ps+"\r\nTankinhalt: "+tankinhalt+"\r\nReichweite: "+reichweite;
 
 
 
