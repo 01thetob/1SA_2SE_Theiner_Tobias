@@ -38,6 +38,13 @@
             this.PS = new System.Windows.Forms.TextBox();
             this.Tankgroeße = new System.Windows.Forms.TextBox();
             this.Verbrauch = new System.Windows.Forms.TextBox();
+            this.Farbe = new System.Windows.Forms.ComboBox();
+            this.Erstellen = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Informationen = new System.Windows.Forms.TextBox();
+            this.Tanken = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 79);
+            this.label3.Location = new System.Drawing.Point(12, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 2;
@@ -70,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 110);
+            this.label4.Location = new System.Drawing.Point(27, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(22, 13);
             this.label4.TabIndex = 3;
@@ -100,13 +107,15 @@
             this.Marke.Name = "Marke";
             this.Marke.Size = new System.Drawing.Size(100, 20);
             this.Marke.TabIndex = 6;
+            this.Marke.Text = "Porsche";
             // 
             // PS
             // 
-            this.PS.Location = new System.Drawing.Point(58, 103);
+            this.PS.Location = new System.Drawing.Point(58, 102);
             this.PS.Name = "PS";
             this.PS.Size = new System.Drawing.Size(100, 20);
             this.PS.TabIndex = 7;
+            this.PS.Text = "25";
             // 
             // Tankgroeße
             // 
@@ -114,6 +123,7 @@
             this.Tankgroeße.Name = "Tankgroeße";
             this.Tankgroeße.Size = new System.Drawing.Size(100, 20);
             this.Tankgroeße.TabIndex = 8;
+            this.Tankgroeße.Text = "40";
             // 
             // Verbrauch
             // 
@@ -121,12 +131,87 @@
             this.Verbrauch.Name = "Verbrauch";
             this.Verbrauch.Size = new System.Drawing.Size(100, 20);
             this.Verbrauch.TabIndex = 9;
+            this.Verbrauch.Text = "7";
+            // 
+            // Farbe
+            // 
+            this.Farbe.FormattingEnabled = true;
+            this.Farbe.Items.AddRange(new object[] {
+            "schwarz",
+            "grau",
+            "blau",
+            "rot",
+            "weiß"});
+            this.Farbe.Location = new System.Drawing.Point(58, 75);
+            this.Farbe.Name = "Farbe";
+            this.Farbe.Size = new System.Drawing.Size(100, 21);
+            this.Farbe.TabIndex = 10;
+            this.Farbe.Text = "rot";
+            // 
+            // Erstellen
+            // 
+            this.Erstellen.Location = new System.Drawing.Point(245, 125);
+            this.Erstellen.Name = "Erstellen";
+            this.Erstellen.Size = new System.Drawing.Size(109, 23);
+            this.Erstellen.TabIndex = 11;
+            this.Erstellen.Text = "Auto erstellen";
+            this.Erstellen.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(219, 206);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Informationen";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(27, 299);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Fahren";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(27, 206);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Tanken";
+            // 
+            // Informationen
+            // 
+            this.Informationen.Location = new System.Drawing.Point(222, 232);
+            this.Informationen.Multiline = true;
+            this.Informationen.Name = "Informationen";
+            this.Informationen.Size = new System.Drawing.Size(184, 158);
+            this.Informationen.TabIndex = 15;
+            // 
+            // Tanken
+            // 
+            this.Tanken.Location = new System.Drawing.Point(30, 232);
+            this.Tanken.Name = "Tanken";
+            this.Tanken.Size = new System.Drawing.Size(87, 20);
+            this.Tanken.TabIndex = 16;
+            this.Tanken.Text = "10";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 262);
+            this.ClientSize = new System.Drawing.Size(449, 436);
+            this.Controls.Add(this.Tanken);
+            this.Controls.Add(this.Informationen);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Erstellen);
+            this.Controls.Add(this.Farbe);
             this.Controls.Add(this.Verbrauch);
             this.Controls.Add(this.Tankgroeße);
             this.Controls.Add(this.PS);
@@ -156,6 +241,13 @@
         private System.Windows.Forms.TextBox PS;
         private System.Windows.Forms.TextBox Tankgroeße;
         private System.Windows.Forms.TextBox Verbrauch;
+        private System.Windows.Forms.ComboBox Farbe;
+        private System.Windows.Forms.Button Erstellen;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox Informationen;
+        private System.Windows.Forms.TextBox Tanken;
     }
 }
 
