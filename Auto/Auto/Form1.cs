@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         string marke="", farbe;
         int tankgroeße, ps, verbrauch, gefahren=0,tankinhalt=0;
         double reichweite = 0;
-        Auto porsche = new Auto(marke);
+       // Auto porsche = new Auto(marke);
         public void Erstellen_Click(object sender, EventArgs e)
         {
             marke = Marke.Text;
@@ -28,7 +28,7 @@ namespace WindowsFormsApplication1
             ps = Convert.ToInt32(PS.Text);
             verbrauch = Convert.ToInt32(Verbrauch.Text);
             erstellung = true;
-            Auto porsche = new Auto();
+          //  Auto porsche = new Auto(marke);
             Info();
         }
 
@@ -37,10 +37,13 @@ namespace WindowsFormsApplication1
             if (erstellung == true)
             {
 
-                porsche.tanken();
+                //porsche.tanken();
+
+               tankinhalt+= ((Convert.ToInt32(Tanken.Text))/tankgroeße)*100;
+               Tankinhalt.Value = tankinhalt;
 
 
-
+               Info();
             }
 
         }
@@ -66,18 +69,19 @@ namespace WindowsFormsApplication1
 
 
         }
-        class Auto {
-            public Auto(string marke1, string farbe1) { 
-            marke1 = marke;
+        //class Auto {
+        //    public Auto(string marke1, string farbe1) { 
+        //    marke1 = marke;
             
-            }
-            public void tanken() {
+        //    }
+        //    public string 
+        //    public void tanken() {
 
             
             
-            }
+        //    }
         
-        }
+        //}
 
        
         
