@@ -45,6 +45,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Informationen = new System.Windows.Forms.TextBox();
             this.Tanken = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Tankenb = new System.Windows.Forms.Button();
+            this.Fahren = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Fahrenb = new System.Windows.Forms.Button();
+            this.Tankinhalt = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -160,7 +166,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(219, 206);
+            this.label7.Location = new System.Drawing.Point(251, 206);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 13);
             this.label7.TabIndex = 12;
@@ -169,7 +175,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 299);
+            this.label8.Location = new System.Drawing.Point(27, 312);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 13;
@@ -186,7 +192,7 @@
             // 
             // Informationen
             // 
-            this.Informationen.Location = new System.Drawing.Point(222, 232);
+            this.Informationen.Location = new System.Drawing.Point(254, 232);
             this.Informationen.Multiline = true;
             this.Informationen.Name = "Informationen";
             this.Informationen.Size = new System.Drawing.Size(184, 158);
@@ -200,11 +206,68 @@
             this.Tanken.TabIndex = 16;
             this.Tanken.Text = "10";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(123, 235);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(27, 13);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Liter";
+            // 
+            // Tankenb
+            // 
+            this.Tankenb.Location = new System.Drawing.Point(156, 232);
+            this.Tankenb.Name = "Tankenb";
+            this.Tankenb.Size = new System.Drawing.Size(65, 23);
+            this.Tankenb.TabIndex = 18;
+            this.Tankenb.Text = "Tanken";
+            this.Tankenb.UseVisualStyleBackColor = true;
+            // 
+            // Fahren
+            // 
+            this.Fahren.Location = new System.Drawing.Point(30, 337);
+            this.Fahren.Name = "Fahren";
+            this.Fahren.Size = new System.Drawing.Size(87, 20);
+            this.Fahren.TabIndex = 19;
+            this.Fahren.Text = "35";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(123, 340);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(21, 13);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "km";
+            // 
+            // Fahrenb
+            // 
+            this.Fahrenb.Location = new System.Drawing.Point(156, 334);
+            this.Fahrenb.Name = "Fahrenb";
+            this.Fahrenb.Size = new System.Drawing.Size(65, 23);
+            this.Fahrenb.TabIndex = 21;
+            this.Fahrenb.Text = "Fahren";
+            this.Fahrenb.UseVisualStyleBackColor = true;
+            // 
+            // Tankinhalt
+            // 
+            this.Tankinhalt.Location = new System.Drawing.Point(30, 269);
+            this.Tankinhalt.Name = "Tankinhalt";
+            this.Tankinhalt.Size = new System.Drawing.Size(191, 23);
+            this.Tankinhalt.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 436);
+            this.Controls.Add(this.Tankinhalt);
+            this.Controls.Add(this.Fahrenb);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.Fahren);
+            this.Controls.Add(this.Tankenb);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.Tanken);
             this.Controls.Add(this.Informationen);
             this.Controls.Add(this.label9);
@@ -248,6 +311,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Informationen;
         private System.Windows.Forms.TextBox Tanken;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button Tankenb;
+        private System.Windows.Forms.TextBox Fahren;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button Fahrenb;
+        private System.Windows.Forms.ProgressBar Tankinhalt;
     }
 }
 
