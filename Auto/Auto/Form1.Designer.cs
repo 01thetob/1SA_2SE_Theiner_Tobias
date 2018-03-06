@@ -218,7 +218,7 @@
             // 
             // Tankenb
             // 
-            this.Tankenb.Location = new System.Drawing.Point(156, 232);
+            this.Tankenb.Location = new System.Drawing.Point(155, 232);
             this.Tankenb.Name = "Tankenb";
             this.Tankenb.Size = new System.Drawing.Size(65, 23);
             this.Tankenb.TabIndex = 18;

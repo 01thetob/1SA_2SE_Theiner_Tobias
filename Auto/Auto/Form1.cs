@@ -16,10 +16,11 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
         bool erstellung = false;
-        string marke, farbe;
+        string marke="", farbe;
         int tankgroeße, ps, verbrauch, gefahren=0,tankinhalt=0;
         double reichweite = 0;
-        private void Erstellen_Click(object sender, EventArgs e)
+        Auto porsche = new Auto(marke);
+        public void Erstellen_Click(object sender, EventArgs e)
         {
             marke = Marke.Text;
             farbe = Farbe.Text;
@@ -27,22 +28,26 @@ namespace WindowsFormsApplication1
             ps = Convert.ToInt32(PS.Text);
             verbrauch = Convert.ToInt32(Verbrauch.Text);
             erstellung = true;
+            Auto porsche = new Auto();
             Info();
         }
 
-
-        private void Tankenb_Click(object sender, EventArgs e)
+        public void Tankenb_Click(object sender, EventArgs e)
         {
-            if(erstellung==true){
-            
-            
-            
-            
-            
+            if (erstellung == true)
+            {
+
+                porsche.tanken();
+
+
+
             }
+
         }
 
-        private void Fahrenb_Click(object sender, EventArgs e)
+      
+
+        public void Fahrenb_Click(object sender, EventArgs e)
         {
             if (erstellung == true)
             {
@@ -54,22 +59,28 @@ namespace WindowsFormsApplication1
             }
 
         }
-        private void Info()
+        public void Info()
         {
             Informationen.Text = "Marke: " + marke+"\r\ngefahren: "+gefahren+"km\r\nFarbe: "+farbe+"\r\nPS: "+ps+"\r\nTankinhalt: "+tankinhalt+"\r\nReichweite: "+reichweite;
 
 
 
         }
-        class auto {
-            private void tanken() {
+        class Auto {
+            public Auto(string marke1, string farbe1) { 
+            marke1 = marke;
             
-            
+            }
+            public void tanken() {
+
             
             
             }
         
         }
+
+       
+        
 
        
 
