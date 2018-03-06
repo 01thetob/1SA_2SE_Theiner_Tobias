@@ -20,11 +20,13 @@ namespace WindowsFormsApplication1
         int tankgroeße, ps, verbrauch;
         private void Erstellen_Click(object sender, EventArgs e)
         {
-
-
-
-
+            marke = Marke.Text;
+            farbe = Farbe.Text;
+            tankgroeße = Convert.ToInt32(Tankgroeße.Text);
+            ps = Convert.ToInt32(PS.Text);
+            verbrauch = Convert.ToInt32(Verbrauch.Text);
             erstellung = true;
+            Info();
         }
 
 
@@ -51,7 +53,13 @@ namespace WindowsFormsApplication1
             }
 
         }
+        private void Info()
+        {
+            Informationen.Text = "Marke: " + marke+"\ngefahren: ";
 
+
+
+        }
         class auto {
             private void tanken() {
             
