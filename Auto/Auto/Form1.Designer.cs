@@ -162,6 +162,7 @@
             this.Erstellen.TabIndex = 11;
             this.Erstellen.Text = "Auto erstellen";
             this.Erstellen.UseVisualStyleBackColor = true;
+            this.Erstellen.Click += new System.EventHandler(this.Erstellen_Click);
             // 
             // label7
             // 
@@ -223,6 +224,7 @@
             this.Tankenb.TabIndex = 18;
             this.Tankenb.Text = "Tanken";
             this.Tankenb.UseVisualStyleBackColor = true;
+            this.Tankenb.Click += new System.EventHandler(this.Tankenb_Click);
             // 
             // Fahren
             // 
@@ -249,6 +251,7 @@
             this.Fahrenb.TabIndex = 21;
             this.Fahrenb.Text = "Fahren";
             this.Fahrenb.UseVisualStyleBackColor = true;
+            this.Fahrenb.Click += new System.EventHandler(this.Fahrenb_Click);
             // 
             // Tankinhalt
             // 

@@ -15,7 +15,55 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+        bool erstellung = false;
+        string marke, farbe;
+        int tankgroeße, ps, verbrauch;
+        private void Erstellen_Click(object sender, EventArgs e)
+        {
 
+
+
+
+            erstellung = true;
+        }
+
+
+        private void Tankenb_Click(object sender, EventArgs e)
+        {
+            if(erstellung==true){
+            
+            
+            
+            
+            
+            }
+        }
+
+        private void Fahrenb_Click(object sender, EventArgs e)
+        {
+            if (erstellung == true)
+            {
+
+
+
+
+
+            }
+
+        }
+
+        class auto {
+            private void tanken() {
+            
+            
+            
+            
+            }
         
+        }
+
+       
+
+       
     }
 }
